@@ -17,15 +17,7 @@ import Foundation
 // Calculator 클래스의 내부코드를 변경
 // 관계를 맺은 후 필요하다면 별도로 만든 연산 클래스의 인스턴스를 Calculator 내부에서 사용
 class Calculator {
-    let num1: Double
-    let num2: Double
-    
-    init(_ num1: Double, _ num2: Double) {
-        self.num1 = num1
-        self.num2 = num2
-    }
-
-    func calculate(oper: String) -> Double {
+    func calculate(oper: String, _ num1: Double, _ num2: Double) -> Double {
         // switch case 문법을 활용한 연산자별 기능 구현
         switch oper {
         // 덧셈 연산

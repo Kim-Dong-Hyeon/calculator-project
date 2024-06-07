@@ -21,20 +21,19 @@ let num2 = readLine()
 // Lv2
 // Lv1에서 만든 Calculator 클래스에 “나머지 연산”이 가능하도록 코드를 추가하고, 연산 진행 후 출력
 
-
 if let num1 = Double(num1!), let num2 = Double(num2!) {
     // 프로퍼티 초기화
-    let calculator = Calculator(num1, num2)
+    let calculator = Calculator()
     // 덧셈 연산
-    let addResult = calculator.calculate(oper: "add")
+    let addResult = calculator.calculate(oper: "add", num1, num2)
     // 뺄셈 연산
-    let subtractResult = calculator.calculate(oper: "sub")
+    let subtractResult = calculator.calculate(oper: "sub", num1, num2)
     // 곱셈 연산
-    let multiplyResult = calculator.calculate(oper: "multi")
+    let multiplyResult = calculator.calculate(oper: "multi", num1, num2)
     // 나눗셈 연산
-    let divideResult = calculator.calculate(oper: "divide")
+    let divideResult = calculator.calculate(oper: "divide", num1, num2)
     // 나머지 연산
-    let remainderResult = calculator.calculate(oper: "remainder")
+    let remainderResult = calculator.calculate(oper: "remainder", num1, num2)
     
     print("addResult : \(addResult)")
     print("subtractResult : \(subtractResult)")
@@ -43,6 +42,7 @@ if let num1 = Double(num1!), let num2 = Double(num2!) {
     print("remainderResult : \(remainderResult)")
 }
 
+// Lv3
 // - Lv2 와 비교하여 어떠한 점이 개선 되었는지 스스로 생각해 봅니다.
 // - hint. 클래스의 책임(단일책임원칙)
 // 하나의 클래스는 하나의 기능만을 가진다는 원칙으로
