@@ -27,9 +27,12 @@ if let num1 = Double(num1!), let num2 = Double(num2!) {
     let multiplyResult = calculator.calculate(oper: "multi", num1, num2)
     // 나눗셈 연산
     let divideResult = calculator.calculate(oper: "divide", num1, num2)
+    // 나머지 연산
+    let remainderResult = calculator.calculate(oper: "remainder", num1, num2)
     
     print("addResult : \(addResult)")
     print("subtractResult : \(subtractResult)")
     print("multiplyResult : \(multiplyResult)")
     print("divideResult : \(divideResult)")
+    print("remainderResult : \(remainderResult)")
 }
