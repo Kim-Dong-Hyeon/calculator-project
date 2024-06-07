@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7607C3B62C12E7F9008E74E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3B52C12E7F9008E74E1 /* main.swift */; };
+		7607C3C12C12EA0D008E74E1 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3C02C12EA0D008E74E1 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		7607C3B52C12E7F9008E74E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7607C3BE2C12E93F008E74E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7607C3BF2C12E950008E74E1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7607C3C02C12EA0D008E74E1 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		7607C3B42C12E7F9008E74E1 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				7607C3C02C12EA0D008E74E1 /* Calculator.swift */,
 				7607C3B52C12E7F9008E74E1 /* main.swift */,
 			);
 			path = Calculator;
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7607C3B62C12E7F9008E74E1 /* main.swift in Sources */,
+				7607C3C12C12EA0D008E74E1 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
