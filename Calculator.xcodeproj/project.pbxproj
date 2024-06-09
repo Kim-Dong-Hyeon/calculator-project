@@ -14,6 +14,7 @@
 		7607C3C72C130484008E74E1 /* MultiplyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3C62C130484008E74E1 /* MultiplyOperation.swift */; };
 		7607C3C92C13048F008E74E1 /* DivideOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3C82C13048F008E74E1 /* DivideOperation.swift */; };
 		7607C3CB2C1304B0008E74E1 /* RemainderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3CA2C1304B0008E74E1 /* RemainderOperation.swift */; };
+		7607C3CD2C13391F008E74E1 /* AbstractOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607C3CC2C13391F008E74E1 /* AbstractOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		7607C3C62C130484008E74E1 /* MultiplyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyOperation.swift; sourceTree = "<group>"; };
 		7607C3C82C13048F008E74E1 /* DivideOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideOperation.swift; sourceTree = "<group>"; };
 		7607C3CA2C1304B0008E74E1 /* RemainderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderOperation.swift; sourceTree = "<group>"; };
+		7607C3CC2C13391F008E74E1 /* AbstractOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				7607C3C02C12EA0D008E74E1 /* Calculator.swift */,
+				7607C3CC2C13391F008E74E1 /* AbstractOperation.swift */,
 				7607C3C22C1303B9008E74E1 /* AddOperation.swift */,
 				7607C3C42C13045E008E74E1 /* SubtractOperation.swift */,
 				7607C3C62C130484008E74E1 /* MultiplyOperation.swift */,
@@ -149,6 +152,7 @@
 				7607C3CB2C1304B0008E74E1 /* RemainderOperation.swift in Sources */,
 				7607C3C92C13048F008E74E1 /* DivideOperation.swift in Sources */,
 				7607C3C72C130484008E74E1 /* MultiplyOperation.swift in Sources */,
+				7607C3CD2C13391F008E74E1 /* AbstractOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

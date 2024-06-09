@@ -6,9 +6,9 @@
 //
 
 import Foundation
-
-class RemainderOperation {
-    func remainder(_ num1: Double, _ num2: Double) -> Double {
+// 함수 override
+class RemainderOperation: AbstractOperation {
+    override func calculate(_ num1: Double, _ num2: Double) -> Double {
         return num1.truncatingRemainder(dividingBy: num2)
     }
 }

@@ -6,9 +6,9 @@
 //
 
 import Foundation
-
-class SubtractOperation {
-    func sub(_ num1: Double, _ num2: Double) -> Double {
+// 함수 override
+class SubtractOperation: AbstractOperation {
+    override func calculate(_ num1: Double, _ num2: Double) -> Double {
         return num1 - num2
     }
 }

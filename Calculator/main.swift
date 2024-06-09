@@ -21,19 +21,30 @@ let num2 = readLine()
 // Lv2
 // Lv1에서 만든 Calculator 클래스에 “나머지 연산”이 가능하도록 코드를 추가하고, 연산 진행 후 출력
 
+// Lv4
+// 선택 구현 기능 (힌트 : 추상화)
 if let num1 = Double(num1!), let num2 = Double(num2!) {
     // 프로퍼티 초기화
-    let calculator = Calculator()
+    // 덧셈 기능하도록 초기화
+    let calculator = Calculator("add")
     // 덧셈 연산
-    let addResult = calculator.calculate(oper: "add", num1, num2)
+    let addResult = calculator.calculate(num1, num2)
     // 뺄셈 연산
-    let subtractResult = calculator.calculate(oper: "sub", num1, num2)
+    // calculator에 뺄셈 기능하도록 프로퍼티 변경함수 호출
+    calculator.set("sub")
+    let subtractResult = calculator.calculate(num1, num2)
     // 곱셈 연산
-    let multiplyResult = calculator.calculate(oper: "multi", num1, num2)
+    // calculator에 곱셈 기능하도록 프로퍼티 변경함수 호출
+    calculator.set("multi")
+    let multiplyResult = calculator.calculate(num1, num2)
     // 나눗셈 연산
-    let divideResult = calculator.calculate(oper: "divide", num1, num2)
+    // calculator에 나눗셈 기능하도록 프로퍼티 변경함수 호출
+    calculator.set("divide")
+    let divideResult = calculator.calculate(num1, num2)
     // 나머지 연산
-    let remainderResult = calculator.calculate(oper: "remainder", num1, num2)
+    // calculator에 나머지 기능하도록 프로퍼티 변경함수 호출
+    calculator.set("remainder")
+    let remainderResult = calculator.calculate(num1, num2)
     
     print("addResult : \(addResult)")
     print("subtractResult : \(subtractResult)")
@@ -49,3 +60,10 @@ if let num1 = Double(num1!), let num2 = Double(num2!) {
 // 각 연산 별로 클래스를 나누어 구성하여 나중에 기능 유지보수시에
 // 조금 더 알아보기 쉽고 기능상 문제가 발생하더라도 문제가 생긴 기능의 코드만
 // 수정하면 되기에 구조상 유지보수에 유용하다고 할 수 있습니다.
+
+// Lv4
+// Lv3 와 비교해서 어떠한 점이 개선 되었는지 스스로 생각해 봅니다.
+// hint. 클래스간의 결합도, 의존성(의존성역전원칙)
+// AbstractOperation 이라는 추상화된 클래스를 만듬으로써 비슷한 구조의 클래스를
+// 손쉽게 생성 및 관리할 수 있고 비슷한 구조여서 함수 호출이나 매개변수 사용이 용이합니다.
+// 이로인해 코드 유지보수에 도움이 된다고 할 수 있습니다.

@@ -6,9 +6,9 @@
 //
 
 import Foundation
-
-class MultiOperation {
-    func multi(_ num1: Double, _ num2: Double) -> Double {
+// 함수 override
+class MultiOperation: AbstractOperation {
+    override func calculate(_ num1: Double, _ num2: Double) -> Double {
         return num1 * num2
     }
 }

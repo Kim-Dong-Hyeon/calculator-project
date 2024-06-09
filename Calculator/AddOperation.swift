@@ -6,9 +6,9 @@
 //
 
 import Foundation
-
-class AddOperation {
-    func add(_ num1: Double, _ num2: Double) -> Double {
+// 함수 override
+class AddOperation: AbstractOperation {
+    override func calculate(_ num1: Double, _ num2: Double) -> Double {
         return num1 + num2
     }
 }
